@@ -22,6 +22,10 @@ public class ProbB {
             char[] chars = in.next().toCharArray();
 
             int totalA = 0;
+            /*
+            we can also consider calculating totalB, but it the same as totalA so it doesn't really matter
+            */
+            
             for (char c : chars) {
                 if (c == 'A') {
                     ++totalA;
