@@ -25,23 +25,28 @@ Note that P_{i,i} is always "Y". Output this *`N * N`* matrix of characters.
 
 ## 2) Input:
 
-- Input begins with an `integer TT`, the number of airlines. 
+- Input begins with an `integer T`, the number of airlines. 
 - For each airline, there are three lines. 
-  - The first line contains the integer `NN`. 
-  - The second line contains the `length-NN string I_{1..N}`
+  - The first line contains the integer `N`. 
+  - The second line contains the `length-N string I_{1..N}`
 ​
-  - The third line contains the `length-NN string O_{1..N}`
+  - The third line contains the `length-N string O_{1..N}`
+
+---
 
 ## 3) Output
-For the `iith` airline, output a line containing:
-> "Case #i : " followed by NN more lines, the iith of which contains the length-NN string P_{i,1..N}
+For the `ith` airline, output a line containing:
+> "Case #i : " followed by NN more lines, the iith of which contains the length-N string `P_{i,1..N}`
 
+---
 
 ## 4) Constraints
+```markdown
     1 ≤ T ≤ 100
     2 ≤ N ≤ 50
-
-### Explanation of Sample
+```
+---
+## 5) Explanation of Sample
 
 In the first case, there are two countries with no restrictions. Therefore, trips between all pairs of countries are possible.
 
