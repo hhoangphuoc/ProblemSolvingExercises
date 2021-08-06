@@ -9,7 +9,7 @@ def timber():
     #get the number of trees in the lines
     N = input()
     # store Pi,Hi value of input in array
-    P = [map(int, input().strip().split()) for _ in xrange(N)]
+    P = [map(int, input().strip().split()) for _ in range(N)]
 
     #sort all the tree in increasing order of position.
     P.sort()
@@ -28,5 +28,5 @@ def timber():
             result = max(result, lookup[-d][p]+l)
     return result
 
-for case in xrange(input()):
+for case in range(input()):
     print('Case #%d: %s' % (case+1, timber()))

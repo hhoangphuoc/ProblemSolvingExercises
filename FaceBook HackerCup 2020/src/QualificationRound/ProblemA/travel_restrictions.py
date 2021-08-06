@@ -5,10 +5,10 @@
 
 def travel_restrictions():
     N = input()
-    I, O = [raw_input().strip() for _ in xrange(2)]
+    I, O = [input().strip() for _ in range(2)]
     result = []
     left, right = -1, -1
-    for i in xrange(N):
+    for i in range(N):
         if not (i-1 >= 0 and O[i] == I[i-1] == 'Y'):
             left = i
         if right < i:
@@ -18,5 +18,5 @@ def travel_restrictions():
         result.append('N'*left + 'Y'*(right-left+1) + 'N'*(N-1-right))
     return "\n" + "\n".join(result)
 
-for case in xrange(input()):
+for case in range(input()):
     print('Case #%d: %s' % (case+1, travel_restrictions()))

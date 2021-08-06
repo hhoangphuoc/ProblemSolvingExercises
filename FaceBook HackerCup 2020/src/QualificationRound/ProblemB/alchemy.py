@@ -7,8 +7,8 @@ from collections import Counter
 
 def alchemy():
     N = input()
-    count = Counter(raw_input().strip())
+    count = Counter(input().strip())
     return "NY"[int(abs(count['A']-count['B']) == 1)]
 
-for case in xrange(input()):
+for case in range(input()):
     print('Case #%d: %s' % (case+1, alchemy()))
