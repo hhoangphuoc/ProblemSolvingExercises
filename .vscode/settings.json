@@ -1,6 +1,10 @@
 {
     "files.associations": {
-        "xhash": "cpp"
+        "xhash": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "vector": "cpp",
+        "xstring": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
