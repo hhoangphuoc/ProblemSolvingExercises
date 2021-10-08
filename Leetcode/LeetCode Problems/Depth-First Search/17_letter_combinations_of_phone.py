@@ -1,9 +1,8 @@
 class Solution:
 
-    ##########################
-    # DFS recursive solution:#
-    ##########################
-    
+    #---------------------------------------#
+    # DFS backtracking & recursive solution:#
+    #---------------------------------------#
     def letterCombinations(self, digits):
         if not digits:
             return []
