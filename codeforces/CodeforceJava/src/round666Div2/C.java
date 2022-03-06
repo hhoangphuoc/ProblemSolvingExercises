@@ -1,51 +1,45 @@
-package template;
+package round666Div2;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.StringTokenizer;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Random;
+import java.util.StringTokenizer;
 
-public class Template {
+public class C {
 	public static void main(String[] args) {
 		FastScanner fs = new FastScanner();
-		int T = fs.nextInt();
-		for (int tt = 0; tt < T; tt++) {
-			/*
-			 * SOLUTION GOES HERE
-			 */
+		PrintWriter out = new PrintWriter(System.out);
+//		int T = fs.nextInt();
+//		for (int tt = 0; tt <= T; tt++) {
+			int n = fs.nextInt();
+			int[] arr = fs.readArray(n);
+			
+			out.println(1+" "+1);
+	        out.println(-arr[0]);
+	        arr[0] = 0;
+	        if(n>1){
+	            out.println(2+" " + n);
+	            for(int i=1;i<n;i++)
+	                out.print((long)(n-1) * arr[i]+" ");
+	            out.println();
+	            out.println("1 "+n);
+	            for(int i=0;i<n;i++)
+	                out.print( - (long) n * arr[i]+" ");
+	        }else {
+	            out.println(1+" "+1);
+	            out.println(0);
+	            out.println(1+" "+1);
+	            out.println(0);
+	        }
+	        out.close();
 		}
-
-	}
-   static long ceil(long a, long b) {
-		return (a+b-1)/b;
-   }
-  
-   static long powMod(long base, long exp, long mod) {
-	   if (base == 0 || base == 1) return base;
-	   if (exp == 0) return 1;
-	   if (exp == 1) return base % mod;
-	   long R = powMod(base, exp/2, mod) % mod;
-	   R *= R;
-	   R %= mod;
-	   if ((exp & 1) == 1) {
-		   return base * R % mod;
-	   }
-	   else return R % mod;
-   }
-	static long pow(long base, long exp) {
-	   if (base == 0 || base == 1) return base;
-	   if (exp == 0) return 1;
-	   if (exp == 1) return base;
-	   long R = pow(base, exp/2);
-	   if ((exp & 1) == 1) {
-		   return R * R * base;
-	   }
-	   else return R * R;
-	}
+//
+//	}
 
 	static void sort(int[] a) {
 		ArrayList<Integer> l = new ArrayList<>();
@@ -98,3 +92,4 @@ public class Template {
 		}
 	}
 }
+
